@@ -5,164 +5,6 @@
     <meta charset="UTF-8">
     <title>Movie Recommendation & Booking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<!-- <link href="css/laout.css" rel="stylesheet" type="text/css"> -->
-<style>
- body {
-	    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	    margin: 0;
-	    padding: 0;
-	    background-color: #ffffff;
-		}
-		
-		.nav_menu img {
-		    margin-right: auto; 
-		}
-		.nav_menu {
-		    list-style: none;
-		    display: flex;
-		    gap: 20px;
-		    margin: 0;
-		    padding: 0;
-		    align-items: center; 
-		}
-		
-		
-		.nav_login{
-		    margin-left: auto; 
-		}
-		.nav_menu li {
-		    text-align: center;
-		}
-		.nav_menu a {
-		    color: black;
-		    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;;
-		    text-decoration: none;
-		    display: inline-block;
-		    padding: 0 5px;
-		    transition: background-color 0.3s;
-		    text-align: center;
-		}
-		
-		
-		.nav_menu {
-		    flex-grow: 1;
-		    justify-content: center;
-		}
-		
-		.mag {
-		    text-align: center;
-		    display: block;
-		}
-
-        .section {
-            margin: 20px;
-        }
-
-       .h2 {
-            color: #333;
-            text-align: center;
-        }
-
-        .movie-card {
-          height:500px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        margin-bottom: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column; 
-      }
-
-        .movie-image {
-            flex: 1;
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .movie-details {
-            padding: 16px;
-        }
-
-        .recomend {
-            display: flex;
-          flex-wrap: nowrap;
-          overflow-x: auto;
-          gap: 20px;
-          justify-content: center; 
-      }
-
-        .movie-list {
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 20px;
-            overflow-x: auto;
-        }
-
-        .movie-list a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .booking-form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: auto;
-        }
-      /*   예약 관련  css */
-       /*  label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        } */
-
-        .mag {
-            text-align: center;
-            display:block;
-        }
-        .banner_logo {
-            display: flex;
-        }
-      #slideshow-container {
-            max-width: 300px;
-            margin: auto;
-        }
-
-        .slide {
-            display: none;
-            width: 100%;
-            height: 100%;
-        }
-
-</style>
 </head>
 <body>
     <%@ include file="header.jsp" %>
@@ -200,7 +42,7 @@
               <p>Release Date: January 1, 2023</p>
           </div>
       </a>
-      
+      <!-- Repeat this block for four more movies -->
   </div>
 </section>
 <!--   ---------------------------- -->
@@ -215,7 +57,7 @@
               <p>Release Date: January 1, 2023</p>
           </div>
       </a>
-     
+      <!-- Repeat this block for four more movies -->
   </div>
 </section>
 <!--   ---------------------------- -->
@@ -230,7 +72,7 @@
               <p>Release Date: January 1, 2023</p>
           </div>
       </a>
-  
+      <!-- Repeat this block for four more movies -->
   </div>
 </section>
 <!--   ---------------------------- -->
@@ -245,7 +87,7 @@
               <p>Release Date: January 1, 2023</p>
           </div>
       </a>
- 
+      <!-- Repeat this block for four more movies -->
   </div>
 </section>
 <!--   ---------------------------- -->
@@ -289,10 +131,10 @@
       showSlide(currentIndex);
   }
 
-
+  // Initial display
   showSlide(currentIndex);
 
-  
+  // Auto change slide every 5 seconds
   setInterval(nextSlide, 5000);
 </script>
 </body>
