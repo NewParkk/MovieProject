@@ -9,7 +9,7 @@
 .*.md.html
 .DS_Store
 .attach_pid*
-.classpath
+*/.classpath
 .factorypath
 .gradle
 /.metadata/
