@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+C:\Users\user\Documents\MovieProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-909105791.index
-912292419.index
-3429800150.index
-2167323753.index
-526009883.index
-2978210792.index
