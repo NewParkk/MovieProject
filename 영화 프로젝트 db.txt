@@ -1,0 +1,16 @@
+MovieProject DB 
+=================================================================
+[movie] - movie_id (int), movie_name(varchar(45)), movie_story(varchar(4000)), movie_date(date)
+영화정보 - 영화 ID(PK) : int, 영화제목 : varcha, 영화 줄거리 : varcha 개봉날짜 : DATE 
+
+[theater] - theater_id(int), movie_id(int), theater_loc(int), theater_locdetail(int)
+극장정보 - 극장ID(PK) : int, 영화ID : int, 위치 : int, 위치상세 : int
+
+[movie_info] - movie_info_id(int), theater_id(int), movie_info_date(date), movie_info_time(date)
+영화 상영정보 -  영화상영 ID(PK): int , 영화ID: int, 극장ID : int, 날짜 : date 시간 :date
+
+[user] - user_id(varchar(45)), user_name(varchar(45)), user_password(varchar(45))
+회원정보 - 회원ID(PK) : varcha, 이름 varcha, 비밀번호: varcha, 생년월일 : int, 성별: varcha
+
+[movie_booking] - movie_booking_id(int), user_id(varchar(45)), movie_id (int), theater_id(int), movie_info_date(date), movie_info_time(date)
+영화 예매 - 영화예매 ID(PK), 회원ID : varcha, 영화ID : int, 극장ID : int, 날짜 : date, 시간 :date
